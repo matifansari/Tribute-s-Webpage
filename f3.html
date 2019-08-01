@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text\css" href="k3.css">
+    
+            <h1 id="title">Eating and Dietary habits Survey Form</h1>
+    
+    </head>
+    <body>
+        <p id="description">Hello,<br>
+        Please take a few minutes of your time to fill in the following<br>
+        survey.</p><hr>
+        <form id="survey-form">
+        <label id="name-label">Name:</label> <input type="text" id="name" required placeholder="Enter your Full Name"><br>
+        <label id="email-label">Email:</label> <input type="email" id="email" required placeholder="Enter your Email"><br>
+        <label id="number-label">How many times a day do you eat?</label><br>
+        <input type="number" id="number" required placeholder="3" max="10" min="1"><br>
+        Gender
+        <select id="dropdown">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select><br>
+        <p>Choose you Diet Type:</p>
+        <label></label>
+            <input type="radio" name="type" value="vegan">Vegan<br>
+            <input type="radio" name="type" value="non-vegetarian">Non-vegetarian<br>
+            <input type="radio" name="type" value="vegetarian">Vegetarian<br>
+    </label>
+    
+            <p>Choose your Balance Diet Incredients</p>
+            <label>
+            <input type="checkbox" value="Chicken" name="food">Chicken<br>
+            <input type="checkbox" value="Vegetables" name="food">Vegetables<br>
+            <input type="checkbox" value="Milk" name="food">Milk<br>
+            <input type="checkbox" value="Fruits" name="food">Fruits<br>
+            <input type="checkbox"  value="Dry Fruits" name="food">Dry Fruits<br>
+            </label>
+
+            <p>Comments</p>
+        <textarea rows="4" cols="50"></textarea><br>
+        <input type="submit" id="submit" value="Submit">
+        </form>
+    </body>
+    <style>
+    
+
+p{
+    text-align:center;
+    color: darkslategray;
+
+}
+form{
+    text-align: center;
+}   
+
+body{
+            background-image:linear-gradient(36deg, rgba(107, 137, 155, 0.473), rgba(42, 61, 48, 0.199)
+
+            );
+        }
+        #title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:green;
+    opacity: 0.5;
+    border: 2px solid black;
+    padding: 10px;
+    margin:30px;
+    text-align: center; 
+}
+#description{
+    font-style: italic;
+    font-size: 5mm;
+    text-align: center; 
+}
+    </style>
+
+</html>
